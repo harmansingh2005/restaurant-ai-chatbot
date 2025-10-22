@@ -1,0 +1,42 @@
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# ---- Environment & secrets ----
+.env
+.env.*
+*.env
+
+# ---- OS / IDE ----
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ---- Logs & temp ----
+*.log
+*.tmp
+*.bak
+
+# ---- Build / cache ----
+build/
+dist/
+*.egg-info/
+.cache/
+.pytest_cache/
+
+# ---- Frontend ----
+node_modules/
+*.map
+
+# ---- Data / misc ----
+*.sqlite3

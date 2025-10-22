@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Dlanos Family Restaurant — Chat</title>
+		<link rel="stylesheet" href="./widget.css" />
+	</head>
+	<body>
+		<!-- Floating Chat Widget -->
+		<div id="dlanos-chat">
+			<!-- Floating Bubble Button -->
+			<button class="chat-bubble" aria-label="Open chat with Dlanos Family Restaurant" aria-expanded="false" aria-controls="dlanos-chat-panel">
+				<span class="bubble-icon" aria-hidden="true">💬</span>
+			</button>
+
+			<!-- Chat Panel -->
+			<section id="dlanos-chat-panel" class="chat-panel" role="dialog" aria-labelledby="dlanos-chat-title" aria-hidden="true">
+				<header class="chat-header">
+					<div class="chat-title">
+						<span class="chat-logo" aria-hidden="true">🍽️</span>
+						<h2 id="dlanos-chat-title">Ask Dlanos Family Restaurant</h2>
+					</div>
+					<button class="chat-close" aria-label="Close chat">✕</button>
+				</header>
+
+				<div id="dlanos-messages" class="messages" aria-live="polite" aria-atomic="false"></div>
+
+				<div class="quick-chips" role="toolbar" aria-label="Quick actions">
+					<button type="button" class="chip" data-intent="hours">Hours</button>
+					<button type="button" class="chip" data-intent="menu">Menu</button>
+					<button type="button" class="chip" data-intent="directions">Directions</button>
+					<button type="button" class="chip" data-intent="vegetarian">Vegetarian</button>
+					<button type="button" class="chip" data-intent="call">Call</button>
+				</div>
+
+				<form class="composer" autocomplete="off">
+					<input
+						type="text"
+						name="message"
+						class="composer-input"
+						placeholder="Ask about hours, menu, or directions..."
+						aria-label="Type your question"
+						required
+					/>
+					<button type="submit" class="composer-send" aria-label="Send message">Send</button>
+				</form>
+			</section>
+		</div>
+
+		<script src="./widget.js" defer></script>
+	</body>
+	</html>
