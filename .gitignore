@@ -1,42 +1,43 @@
-
-# ---- Python ----
+# Python
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
 *.so
 
-# Virtual environment
+# Virtual environments
 .venv/
 venv/
 env/
+backend/.venv/
 
-# ---- Environment & secrets ----
+# Env files / secrets
 .env
 .env.*
 *.env
+backend/.env
 
-# ---- OS / IDE ----
+# OS / IDE
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
 
-# ---- Logs & temp ----
+# Logs & temp
 *.log
 *.tmp
 *.bak
 
-# ---- Build / cache ----
+# Build/cache
 build/
 dist/
 *.egg-info/
 .cache/
 .pytest_cache/
 
-# ---- Frontend ----
+# Frontend
 node_modules/
 *.map
 
-# ---- Data / misc ----
+# Data
 *.sqlite3
